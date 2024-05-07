@@ -1,0 +1,57 @@
+step1= open terminal
+      commands:
+npm install -g @angular/cli @latest
+ng new angal
+
+after code:
+cd angal
+ng serve
+
+
+#code
+<h1>{{title}}</h1>
+<input type="text" #name placeholder="Enter your name" name="Name"><br>
+<input type="number" #contact placeholder="Enter phone no."name="Contact"><br>
+<input type="text"#address placeholder="Enter address" name="Address"><br>
+<input type="email" #email placeholder="Enter your email" name="Email"><br>
+<input type="password" #password placeholder="Enter your password" name="password"><br>
+
+<button (click)=getValue(name.value,contact.value,address.value,email.value)>Registation</button>
+
+<h1>Registation data</h1>
+
+
+Name:{{displayName}} <br>
+Contact:{{displayContact}} <br>
+Address{{displayAddress}} <br>
+Email{{displayEmail}} <br>
+
+
+#code ts:
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'Registation';
+
+displayName="";
+displayContact="";
+displayAddress="";
+displayEmail="";
+ 
+getValue(name:string,contact:string,address:string,email:string)
+{
+this.displayName=name;
+this.displayContact=contact;
+this.displayAddress=address;
+this.displayEmail=email;
+
+}
+}
