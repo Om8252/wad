@@ -1,0 +1,22 @@
+step1: create om.js file 
+step2:create dockerfile
+
+  
+step3:
+ Dockerfile :-
+• FROM node:alpine
+• COPY . /Practical2b
+• CMD node . /Practical2b/hello.js
+
+
+
+  
+ CMD COMMANDS:-
+• docker --version 
+• node hello.js
+• docker build -t practical2b .
+• docker images
+• copy command from docker hub (docker pull openjdk)
+• docker run --name yash -it -d openjdk
+• docker ps
+• docker exec -it yash jshell
