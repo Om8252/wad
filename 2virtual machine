@@ -1,0 +1,13 @@
+step1: open VM
+step2: click on ubuntu setting 
+         select network
+step3: make adaptor1 as NAT 
+step4: run both OS 
+step5: open terminal in both and then
+          run command " sudo apt install net-tools "
+
+step6: create on file in one OS ("file.txt")
+step7: check IP Address with " ifconfig " command 
+
+step8: then to send file 
+         " scp file.txt first_name@10.0.2.4: "  command 
