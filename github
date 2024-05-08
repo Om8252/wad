@@ -1,0 +1,13 @@
+step1: create an folder the open terminal in that folder
+step2: create new folder from terminal with " mkdir folder_name "
+step3: "cd folder_name "
+step4: git init 
+step5: create index.html file on created folder
+step6: "  git add .  " 
+step7: run commands which are on git repository
+
+
+
+# if username and email is requird
+ git config --global user.name "FIRST_NAME LAST_NAME"
+ git config --global user.email "MY_NAME@example.com"
